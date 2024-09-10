@@ -1,9 +1,7 @@
-rows = int(input("Number: "))
-
-for i in range(0,rows+1):
-    for j in range(i):
-        if i<10:
-            print("0"+str(i), end="")
-        else:
-            print(i,end="")
-    print()
+num = input("Num: ")
+sum = 0
+for i in range(0,len(num)):
+    sum += int(num[i])**3
+if sum==int(num):
+    print("amstrong")
+else:print('amweak')
